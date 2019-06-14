@@ -1,0 +1,74 @@
+.backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+	display: none;
+}
+.backdrop.is-open {
+	display: block;
+}
+.modal {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	margin: 20% auto;
+	width: 300px;
+	background-color: #fff;
+	z-index: 200;
+}
+
+.modal-header h1 {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 500;
+	background-color: #29bb9c;
+	padding: 5px 0;
+	margin: 0;
+	z-index: 200;
+	border-radius: 5px 5px 0 0;
+}
+
+.modal-input {
+	width: 100%;
+}
+.modal-input input {
+	padding: 10px 0;
+	width: 100%;
+	margin: 10px 0;
+	border: none;
+	text-indent: 10px;
+	font-size: 20px;
+}
+
+.modal-buttons {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border-top: 1px solid #ddd;
+}
+
+.modal-buttons button {
+	padding: 6px 10px;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+}
+
+.modal-buttons button:nth-child(1) {
+	background-color: #aaa;
+}
+.modal-buttons button:nth-child(1):hover {
+	background-color: #888;
+}
+
+.modal-buttons button:nth-child(2) {
+	background-color: #29bb9c;
+}
+.modal-buttons button:nth-child(2):hover {
+	background-color: #159588;
+}

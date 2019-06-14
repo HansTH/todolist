@@ -1,0 +1,131 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: #292727;
+	box-sizing: border-box;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.app-container {
+	width: 100%;
+	height: 667px;
+	background-color: #f6f6f6;
+	margin: auto;
+	text-align: center;
+}
+
+.todoform-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 76px;
+	background-color: #29bb9c;
+	border-radius: 0 0 5px 5px;
+	margin-bottom: 16px;
+}
+
+.todoform-container p {
+	color: #f6f6f6;
+}
+
+.searchbar-input-group {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 40px;
+	border-radius: 4px 20px 20px 4px;
+	margin: 8px;
+}
+.searchbar-input-group input {
+	width: 100%;
+	border-radius: 4px 20px 20px 4px;
+	background-color: #159588;
+	border: none;
+	outline: none;
+	text-indent: 8px;
+	padding-right: 48px;
+	font-size: 20px;
+	color: #fff;
+}
+.searchbar-input-group button {
+	display: flex;
+	position: absolute;
+	right: 0;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	border: 2px solid #159588;
+	outline: none;
+	z-index: 100;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+
+.searchbar-input-group button:hover {
+	background-color: #afccc5;
+}
+
+.list-container {
+	margin: 0;
+}
+
+.todo-item {
+	display: flex;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 2px 7px 0 rgba(0, 0, 0, 0.22);
+	margin: 8px;
+	height: 40px;
+}
+
+.todo-row {
+	display: flex;
+	position: relative;
+	align-items: center;
+	width: 100%;
+	margin: 8px;
+	margin-right: 0;
+}
+.todo-input {
+	width: calc(100% - 88px);
+	border: none;
+	font-size: 20px;
+	outline: none;
+}
+.todo-buttons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	right: 0;
+}
+.todo-buttons button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	width: 40px;
+	height: 40px;
+}
+
+.todo-buttons-seperator {
+	position: relative;
+	height: 28px;
+	width: 1px;
+	background-color: #efeff4;
+}
+
+.list-seperator {
+	width: 60%;
+	height: 2px;
+	background-color: #efeff4;
+	margin: 16px auto;
+}
